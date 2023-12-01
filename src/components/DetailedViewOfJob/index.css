@@ -1,0 +1,99 @@
+.location-lpa-d {
+  display: flex;
+  justify-content: space-between;
+}
+.web-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.link-div {
+  display: flex;
+  align-items: center;
+  width: 70px;
+  justify-content: space-between;
+  font-size: 20px;
+  color: #4f46e5;
+}
+.anchor {
+  text-decoration: none;
+}
+.similar-bg {
+  background-color: black;
+  min-height: 100vh;
+}
+
+.job-card-detailed {
+  color: white;
+  background-color: #7e858e;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+}
+.logo-cm {
+  height: 100px;
+  width: 100px;
+  margin-right: 20px;
+}
+.failure-div-similar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.life-div {
+  display: flex;
+  justify-content: space-between;
+}
+.life-img {
+  margin-left: 10px;
+}
+
+.similar-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+}
+
+.skills-lists {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.similar-head {
+  color: white;
+  margin-left: 20px;
+}
+.icons-flex {
+  display: flex;
+  align-items: center;
+}
+.fill {
+  color: gold;
+  height: 18px;
+  width: 18px;
+  margin-bottom: 2px;
+  margin-right: 4px;
+}
+@media screen and (max-width: 576px) {
+  .life-img {
+    width: 180px;
+    margin-right: 10px;
+  }
+  .similar-bg {
+    display: flex;
+    flex-direction: column;
+  }
+  .similar-list {
+    margin-left: -30px;
+  }
+  .skills-lists {
+    margin-left: -40px;
+  }
+}

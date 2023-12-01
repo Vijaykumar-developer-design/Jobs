@@ -1,0 +1,149 @@
+.all-containers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+}
+.top-search-container {
+  width: 100%;
+}
+
+.job-card {
+  color: white;
+  background-color: #7e858e;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+.search-input {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: inherit;
+  border: none;
+  outline: none;
+}
+.search-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  border: 2px solid #cbd5e1;
+  border-radius: 5px;
+  background-color: #f1f5f9;
+  width: 246px;
+  margin-left: 48px;
+  /* position: absolute; */
+}
+
+.search-icon {
+  height: 29px;
+  width: 30px;
+}
+.search-btn {
+  background-color: #cbd5e1;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-right: 3px;
+}
+.active-list {
+  list-style-type: none;
+  width: 100%;
+}
+@media screen and (max-width: 576px) {
+  .active-list {
+    margin-left: -18px;
+  }
+}
+
+.link-element {
+  text-decoration: none;
+  background-color: #cbd5e1;
+}
+.logo {
+  height: 60px;
+  width: 60px;
+  margin-right: 25px;
+  margin-top: 15px;
+}
+.logo-container {
+  display: flex;
+}
+.location-lpa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icons {
+  margin-right: 10px;
+}
+.link-card {
+  text-decoration: none;
+}
+.rating-container {
+  display: flex;
+  align-items: center;
+}
+.failure-retry {
+  background-color: #6366f1;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+  width: 120px;
+}
+.failure-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding-top: 80px;
+}
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* border: 2px solid red; */
+}
+.active-bg-container {
+  background-color: black;
+}
+.flex-dives {
+  display: flex;
+  /* justify-content: space-between; */
+  width: 100%;
+  /* border: 2px solid green; */
+}
+@media screen and (max-width: 576px) {
+  .flex-dives {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .job-card-heading {
+    font-size: 25px;
+  }
+}
+.no-jobs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.no-jobs-text {
+  color: white;
+}
+.no-job-img {
+  width: 80%;
+  margin-left: 50px;
+  margin-right: 50px;
+}

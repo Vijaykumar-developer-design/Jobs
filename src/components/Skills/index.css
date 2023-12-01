@@ -1,0 +1,25 @@
+.skills-div {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  margin-right: 20px;
+}
+
+.skill-img {
+  height: 100px;
+  width: 100px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .skills-head {
+    font-size: 25px;
+  }
+  .skill-img {
+    height: 80px;
+    width: 80px;
+  }
+  .skills-div {
+    width: 250px;
+  }
+}

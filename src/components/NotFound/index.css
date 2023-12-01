@@ -1,0 +1,11 @@
+.not-bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 100vh;
+}
+.not-head {
+  color: white;
+}

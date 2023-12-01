@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import LoginForm from "./components/LoginForm";
+import ProtectedRoute from "./components/ProtectedRoute/index";
+import Home from "./components/Home";
+import ActiveJobList from "./components/ActiveJobs";
+import DetailedView from "./components/DetailedViewOfJob";
+import NotFounded from "./components/NotFound";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import "./App.css";
+
+const App = () => (
+  <BrowserRouter>
+    <Switch>
+      <Route path="/login" component={LoginForm} />
+      <ProtectedRoute exact path="/" component={Home} />
+      <ProtectedRoute exact path="/jobs" component={ActiveJobList} />
+      <ProtectedRoute exact path="/jobs/:id" component={DetailedView} />
+      <ProtectedRoute path="/not-found" component={NotFounded} />
+      <Redirect to="not-found" />
+    </Switch>
+  </BrowserRouter>
+);
 
 export default App;
